@@ -1,16 +1,38 @@
 package com.driver;
 
 public class Vehicle {
-
     private String name;
     private int currentSpeed;
     private int currentDirection;
 
-    //Constructor
+    public String getName() {
+        return this.name; // define name
+    }
+
+    public void setName(String name) {
+        this.name = name; // Set name
+    }
+
+    public int getCurrentSpeed() {
+        return this.currentSpeed; // take current speed
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed; // set speed
+    }
+
+    public int getCurrentDirection() {
+        return this.currentDirection; // choose direction
+    }
+
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection; // set direction
+    }
+
     public Vehicle(String name) {
         this.name = name;
-        this.currentSpeed = 0;
         this.currentDirection = 0;
+        this.currentSpeed = 0;
     }
 
     public void steer(int direction){
